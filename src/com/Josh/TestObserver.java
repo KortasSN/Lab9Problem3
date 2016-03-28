@@ -10,12 +10,14 @@ package com.Josh;
 
 
             EggAlert eggAlert = new EggAlert();
-
+            EggCounter eggCounter = new EggCounter();
 
             Chicken mavis = new Chicken("Mavis");
             mavis.addObserver(eggAlert);
+            mavis.addObserver(eggCounter);
             Chicken betty = new Chicken("Betty");
             betty.addObserver(eggAlert);
+            betty.addObserver(eggCounter);
             mavis.layEgg();
             betty.layEgg();
             mavis.layEgg();
