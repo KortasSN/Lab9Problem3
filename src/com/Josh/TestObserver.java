@@ -13,11 +13,13 @@ package com.Josh;
             EggCounter eggCounter = new EggCounter();
 
             Chicken mavis = new Chicken("Mavis");
-            mavis.addObserver(eggAlert);
             mavis.addObserver(eggCounter);
+            mavis.addObserver(eggAlert);
+
             Chicken betty = new Chicken("Betty");
-            betty.addObserver(eggAlert);
             betty.addObserver(eggCounter);
+            betty.addObserver(eggAlert);
+
             mavis.layEgg();
             betty.layEgg();
             mavis.layEgg();

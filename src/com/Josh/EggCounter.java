@@ -16,7 +16,9 @@ public class EggCounter implements Observer {
     //}
 
     @Override
-    public void update(Observable o, Object arg) {
-        System.out.println(eggs + " eggs laid." );
+    public void update(Observable Chicken, Object arg) {
+
+       eggs++;
+        System.out.println(Chicken.toString() + " has laid " + eggs + " egg(s) total." );
     }
 }
