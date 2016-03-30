@@ -20,12 +20,17 @@ package com.Josh;
             betty.addObserver(eggCounter);
             betty.addObserver(eggAlert);
 
+            Chicken beulah = new Chicken("Beulah", 0);
+            beulah.addObserver(eggCounter);
+            beulah.addObserver(eggAlert);
 
             mavis.layEgg();
             betty.layEgg();
             mavis.layEgg();
-
-
+            mavis.layEgg();
+            mavis.layEgg();
+            betty.layEgg();
+            beulah.layEgg();
         }
 
     }
