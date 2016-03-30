@@ -6,19 +6,22 @@ import java.util.Observer;
  */
 public class EggCounter implements Observer {
 
-    int eggs;
+    //int eggs;
     //EggCounter(int eggs) {
     //    this.eggs = eggs;
     //}
 
     //public void counter(Observable EggAlert, Object arg) {
-    //    System.out.println();
+    //    this.eggs = this.eggs++;
+    //    System.out.println("hitting the counter in EggCounter class");
     //}
 
     @Override
-    public void update(Observable Chicken, Object arg) {
+    public void update(Observable chicken, Object arg) {
 
-       eggs++;
-        System.out.println(Chicken.toString() + " has laid " + eggs + " egg(s) total." );
+        if (((Chicken)chicken).laidEgg()) {
+
+            System.out.println(chicken.toString() + " has laid " + " egg(s) total.");
+        }
     }
 }

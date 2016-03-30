@@ -9,7 +9,10 @@ import java.util.Observer;
 public class EggAlert implements Observer {
 
     public void update(Observable chicken, Object arg) {
-        System.out.println(chicken + " has laid an egg");
-    }
+        if (((Chicken) chicken).laidEgg()) {
+            System.out.println(chicken + " has laid an egg");
 
+        }
+
+    }
 }

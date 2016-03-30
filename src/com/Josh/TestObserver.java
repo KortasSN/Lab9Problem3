@@ -20,6 +20,7 @@ package com.Josh;
             betty.addObserver(eggCounter);
             betty.addObserver(eggAlert);
 
+
             mavis.layEgg();
             betty.layEgg();
             mavis.layEgg();
