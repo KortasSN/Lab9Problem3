@@ -9,28 +9,28 @@ package com.Josh;
         public static void main(String[] args) {
 
 
-            EggAlert eggAlert = new EggAlert();
-            EggCounter eggCounter = new EggCounter();
+            EggAlert eggAlert = new EggAlert();   //created EggAlert called eggAlert
+            EggCounter eggCounter = new EggCounter();   //creates EggCounter called eggCounter
 
-            Chicken mavis = new Chicken("Mavis", 0);
-            mavis.addObserver(eggCounter);
-            mavis.addObserver(eggAlert);
+            Chicken mavis = new Chicken("Mavis", 0);  //creates a new Chicken called Mavis starting with 0 eggs
+            mavis.addObserver(eggCounter);      //adds the eggCounter observer to the set of observers
+            mavis.addObserver(eggAlert);   //adds the eggAlert observer to the set of observers
 
-            Chicken betty = new Chicken("Betty", 0);
-            betty.addObserver(eggCounter);
-            betty.addObserver(eggAlert);
+            Chicken betty = new Chicken("Betty", 0);  //creates a new Chicken called Betty starting with 0 eggs
+            betty.addObserver(eggCounter);   //adds the eggCounter observer to the set of observers
+            betty.addObserver(eggAlert);   //adds the eggAlert observer to the set of observers
 
-            Chicken beulah = new Chicken("Beulah", 0);
-            beulah.addObserver(eggCounter);
-            beulah.addObserver(eggAlert);
+            Chicken beulah = new Chicken("Beulah", 0);  //creates a new Chicken called Beulah starting with 0 eggs
+            beulah.addObserver(eggCounter);  //adds the eggCounter observer to the set of observers
+            beulah.addObserver(eggAlert);    //adds the eggAlert observer to the set of observers
 
-            mavis.layEgg();
-            betty.layEgg();
-            mavis.layEgg();
-            mavis.layEgg();
-            mavis.layEgg();
-            betty.layEgg();
-            beulah.layEgg();
+            mavis.layEgg();   //calls layEgg for object mavis
+            betty.layEgg();   //calls layEgg for object betty
+            mavis.layEgg();   //calls layEgg for object mavis
+            mavis.layEgg();   //calls layEgg for object mavis
+            mavis.layEgg();   //calls layEgg for object mavis
+            betty.layEgg();   //calls layEgg for object betty
+            beulah.layEgg();   //calls layEgg for object beulah
         }
 
     }
