@@ -9,11 +9,12 @@ import java.util.Observable;
 public class Chicken extends Observable {
 
     String name;
+    int eggs;
     boolean laidEgg = false;
     //int eggs;
-    Chicken(String name){
+    Chicken(String name, int eggs){
         this.name = name;
-    //    this.eggs = eggs;
+        this.eggs = eggs;
     }
 
 
